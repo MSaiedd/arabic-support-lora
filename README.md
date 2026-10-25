@@ -47,7 +47,8 @@ fine-tuned language model. Missing artifacts return `503`, rather than fabricate
 
 The default model is [Qwen/Qwen2.5-0.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct).
 Model downloads need an internet connection and approximately 1 GB of disk space for weights.
-CPU training is slower; reduce the step count for a pipeline smoke run.
+CPU training and generative evaluation can take several minutes; reduce the step count
+for a pipeline smoke run. `--limit 4` on the evaluation command provides a smaller check.
 
 ```bash
 # Optional: install the CPU torch build first to avoid CUDA packages on a CPU machine.
@@ -153,3 +154,19 @@ Validate the container with disposable volumes and accounts:
 docker build -t arabic-support-lora:portfolio .
 python scripts/container_smoke.py
 ```
+
+## Download the recorded CPU smoke adapter
+
+The [v0.1.0 release](https://github.com/MSaiedd/arabic-support-lora/releases/tag/v0.1.0)
+contains the actual pretrained-Qwen LoRA adapter, tokenizer, run report, and base model license.
+Unzip `arabic-support-lora-cpu-smoke.zip` into `artifacts/lora/`, install `.[train]`, and configure
+`MODEL_ID` / `ADAPTER_PATH` as shown above. Base model weights are downloaded separately.
+The archive SHA-256 is recorded in `reports/adapter-artifact.json`.
+
+This adapter received eight CPU optimizer steps on synthetic examples. It is a reproducible
+engineering smoke artifact, not a fully trained or validated customer support model.
+
+Recorded held-out fixture results: base category macro-F1 **0.3889**, eight-step LoRA
+**0.4554**, TF-IDF **0.7542**. Base/LoRA valid JSON: **75% / 95.8%**.
+The baseline remains stronger at classification on this fixture. Full predictions and
+limitations are in `reports/causal.json` and `docs/VALIDATION.md`.

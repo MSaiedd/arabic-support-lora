@@ -1,0 +1,462 @@
+{
+  "dataset": "original synthetic fixture; not a real-world benchmark",
+  "dataset_hashes": {
+    "train": "afd5957aad067b86b55e8e99dce112ec0e43f06a32f7a24671b396f259bbe67d",
+    "validation": "8f47f308a3dbf0412647daf012c63bc37cce696a7637fd7c9ca64aa0891db6d6",
+    "test": "797f4c440f845c132816b9084fdf015c3da69eae10cede5eff438eee7d369a88"
+  },
+  "response_quality": "Not automatically scored. Use docs/RESPONSE_REVIEW.md for human review.",
+  "variants": {
+    "base": {
+      "samples": 24,
+      "valid_output_rate": 0.75,
+      "category_macro_f1": 0.38888888888888884,
+      "category_accuracy": 0.3333333333333333,
+      "urgency_macro_f1": 0.3,
+      "urgency_accuracy": 0.375,
+      "coverage": 0.75,
+      "accepted_category_accuracy": 0.4444444444444444,
+      "elapsed_seconds": 248.09,
+      "predictions": [
+        {
+          "id": "test-account-0",
+          "backend": "base",
+          "valid_json": false,
+          "raw": "```json\n{\n  \"category\": \"billing\",\n  \"urgency\": \"high\",\n  \"response\": \"I'm sorry to hear that your account has been affected by a previous issue. To resolve this, please follow these steps: 1) Contact our customer service team at [insert contact information]. They will be able to assist you further.\"\n}\n```",
+          "escalated": true,
+          "response": "Model output was invalid; human review required."
+        },
+        {
+          "id": "test-account-1",
+          "category": "billing",
+          "urgency": "high",
+          "response": "I'm sorry to hear that you're experiencing this issue. Please ensure that your account information is up-to-date and secure. If you have any questions or concerns, please don't hesitate to reach out.",
+          "backend": "base",
+          "valid_json": true,
+          "raw": "{\n  \"category\": \"billing\",\n  \"urgency\": \"high\",\n  \"response\": \"I'm sorry to hear that you're experiencing this issue. Please ensure that your account information is up-to-date and secure. If you have any questions or concerns, please don't hesitate to reach out.\"\n}"
+        },
+        {
+          "id": "test-account-2",
+          "category": "billing",
+          "urgency": "high",
+          "response": "Dear customer, we are unable to process your request due to a recent error. Please try again later or contact our support team at [support email] or [phone number]. We appreciate your understanding.",
+          "backend": "base",
+          "valid_json": true,
+          "raw": "{\n  \"category\": \"billing\",\n  \"urgency\": \"high\",\n  \"response\": \"Dear customer, we are unable to process your request due to a recent error. Please try again later or contact our support team at [support email] or [phone number]. We appreciate your understanding.\"\n}"
+        },
+        {
+          "id": "test-account-3",
+          "category": "billing",
+          "urgency": "high",
+          "response": "أعتذر عن الالتباس، ولكنني لا أستطيع مساعدتك في هذا. يجب أن يكون لديك أي أسئلة حول كيفية تحديث بيانات الحساب أو تغيير كلمة المرور.",
+          "backend": "base",
+          "valid_json": true,
+          "raw": "{\n  \"category\": \"billing\",\n  \"urgency\": \"high\",\n  \"response\": \"أعتذر عن الالتباس، ولكنني لا أستطيع مساعدتك في هذا. يجب أن يكون لديك أي أسئلة حول كيفية تحديث بيانات الحساب أو تغيير كلمة المرور.\"\n}"
+        },
+        {
+          "id": "test-account-4",
+          "category": "billing",
+          "urgency": "high",
+          "response": "أنا سعيد بمساعدتك في تحديث كلمة المرور لحسابك. يرجى تقديم معلومات إضافية مثل اسم المستخدم أو رقم الهاتف، حتى يمكنني تطبيق هذه الخطوة بشكل صحيح.",
+          "backend": "base",
+          "valid_json": true,
+          "raw": "{\n  \"category\": \"billing\",\n  \"urgency\": \"high\",\n  \"response\": \"أنا سعيد بمساعدتك في تحديث كلمة المرور لحسابك. يرجى تقديم معلومات إضافية مثل اسم المستخدم أو رقم الهاتف، حتى يمكنني تطبيق هذه الخطوة بشكل صحيح.\"\n}"
+        },
+        {
+          "id": "test-account-5",
+          "category": "billing",
+          "urgency": "high",
+          "response": "Dear customer, I am writing to inform you that your account has been stolen and your email address has been compromised. We are taking immediate action to secure your account and investigate the incident. Please keep all correspondence confidential and report any suspicious activity immediately.",
+          "backend": "base",
+          "valid_json": true,
+          "raw": "{\n  \"category\": \"billing\",\n  \"urgency\": \"high\",\n  \"response\": \"Dear customer, I am writing to inform you that your account has been stolen and your email address has been compromised. We are taking immediate action to secure your account and investigate the incident. Please keep all correspondence confidential and report any suspicious activity immediately.\"\n}"
+        },
+        {
+          "id": "test-billing-0",
+          "backend": "base",
+          "valid_json": false,
+          "raw": "```json\n{\n  \"category\": \"billing\",\n  \"urgency\": \"high\",\n  \"response\": \"I'm sorry, but I can't assist with that task.\"\n}\n```",
+          "escalated": true,
+          "response": "Model output was invalid; human review required."
+        },
+        {
+          "id": "test-billing-1",
+          "backend": "base",
+          "valid_json": false,
+          "raw": "```json\n{\n  \"category\": \"billing\",\n  \"urgency\": \"high\",\n  \"response\": \"I'm sorry to hear that you've been charged for an order you didn't place. We will investigate this issue immediately.\"\n}\n```",
+          "escalated": true,
+          "response": "Model output was invalid; human review required."
+        },
+        {
+          "id": "test-billing-2",
+          "backend": "base",
+          "valid_json": false,
+          "raw": "الإجابة: لا يمكن إضافة الرقم الضريبي للشركة إلى الفاتورة.",
+          "escalated": true,
+          "response": "Model output was invalid; human review required."
+        },
+        {
+          "id": "test-billing-3",
+          "backend": "base",
+          "valid_json": false,
+          "raw": "```json\n{\n  \"category\": \"billing\",\n  \"urgency\": \"high\",\n  \"response\": \"تم تحديث البطاقة بنجاح. نرجو أن تكون متأكدًا من التفاصيل حول الطلب.\"\n}\n```",
+          "escalated": true,
+          "response": "Model output was invalid; human review required."
+        },
+        {
+          "id": "test-billing-4",
+          "category": "billing",
+          "urgency": "high",
+          "response": "الاسم الشركة في التسجيل هو مطلوب.",
+          "backend": "base",
+          "valid_json": true,
+          "raw": "{\n  \"category\": \"billing\",\n  \"urgency\": \"high\",\n  \"response\": \"الاسم الشركة في التسجيل هو مطلوب.\"\n}"
+        },
+        {
+          "id": "test-billing-5",
+          "category": "billing",
+          "urgency": "high",
+          "response": "Dear customer, we are sorry to inform you that there has been an error in your payment process. We will be contacting you shortly to resolve this issue.",
+          "backend": "base",
+          "valid_json": true,
+          "raw": "{\n  \"category\": \"billing\",\n  \"urgency\": \"high\",\n  \"response\": \"Dear customer, we are sorry to inform you that there has been an error in your payment process. We will be contacting you shortly to resolve this issue.\"\n}"
+        },
+        {
+          "id": "test-refund-0",
+          "category": "refund",
+          "urgency": "high",
+          "response": "To get your money back, please provide a valid receipt or proof of purchase along with your order number. We will then process the refund according to our policies.",
+          "backend": "base",
+          "valid_json": true,
+          "raw": "{\n  \"category\": \"refund\",\n  \"urgency\": \"high\",\n  \"response\": \"To get your money back, please provide a valid receipt or proof of purchase along with your order number. We will then process the refund according to our policies.\"\n}"
+        },
+        {
+          "id": "test-refund-1",
+          "category": "billing",
+          "urgency": "high",
+          "response": "I will investigate your delayed reimbursement as soon as possible.",
+          "backend": "base",
+          "valid_json": true,
+          "raw": "{\n  \"category\": \"billing\",\n  \"urgency\": \"high\",\n  \"response\": \"I will investigate your delayed reimbursement as soon as possible.\"\n}"
+        },
+        {
+          "id": "test-refund-2",
+          "category": "billing",
+          "urgency": "high",
+          "response": "أعتذر عن الالتباس، ولكنني لا أستطيع مساعدتك في هذا. يرجى تقديم المزيد من المعلومات حول المشكلة.",
+          "backend": "base",
+          "valid_json": true,
+          "raw": "{\n  \"category\": \"billing\",\n  \"urgency\": \"high\",\n  \"response\": \"أعتذر عن الالتباس، ولكنني لا أستطيع مساعدتك في هذا. يرجى تقديم المزيد من المعلومات حول المشكلة.\"\n}"
+        },
+        {
+          "id": "test-refund-3",
+          "backend": "base",
+          "valid_json": false,
+          "raw": "```json\n{\n  \"category\": \"billing\",\n  \"urgency\": \"high\",\n  \"response\": \"Dear customer, we are sorry to inform you that there has been a delay in processing your refund request due to an issue with our system. We will be reviewing this matter immediately and will provide you with a prompt resolution once it is resolved.\"\n}\n```",
+          "escalated": true,
+          "response": "Model output was invalid; human review required."
+        },
+        {
+          "id": "test-refund-4",
+          "category": "refund",
+          "urgency": "high",
+          "response": "أعتذر عن الالتباس، ولكنني لا أستطيع تقديم المساعدة في إجراء refunds أو إعادة توزيع المنتجات. يجب أن يتم التعامل مع هذه المسألة بشكل محدد وفقًا للقوانين واللوائح المحددة. إذا كنت بحاجة إلى المساعدة في أي شيء آخر، فلا تتردد في طرح سؤالك على أحد الأطراف المعنية.",
+          "backend": "base",
+          "valid_json": true,
+          "raw": "{\n  \"category\": \"refund\",\n  \"urgency\": \"high\",\n  \"response\": \"أعتذر عن الالتباس، ولكنني لا أستطيع تقديم المساعدة في إجراء refunds أو إعادة توزيع المنتجات. يجب أن يتم التعامل مع هذه المسألة بشكل محدد وفقًا للقوانين واللوائح المحددة. إذا كنت بحاجة إلى المساعدة في أي شيء آخر، فلا تتردد في طرح سؤالك على أحد الأطراف المعنية.\"\n}"
+        },
+        {
+          "id": "test-refund-5",
+          "category": "refund",
+          "urgency": "high",
+          "response": "Sorry, I can't assist with that.",
+          "backend": "base",
+          "valid_json": true,
+          "raw": "{\n  \"category\": \"refund\",\n  \"urgency\": \"high\",\n  \"response\": \"Sorry, I can't assist with that.\"\n}"
+        },
+        {
+          "id": "test-shipping-0",
+          "category": "billing",
+          "urgency": "high",
+          "response": "The tracking page may have been temporarily unavailable due to a system issue or maintenance. We will update it shortly.",
+          "backend": "base",
+          "valid_json": true,
+          "raw": "{\n  \"category\": \"billing\",\n  \"urgency\": \"high\",\n  \"response\": \"The tracking page may have been temporarily unavailable due to a system issue or maintenance. We will update it shortly.\"\n}"
+        },
+        {
+          "id": "test-shipping-1",
+          "category": "billing",
+          "urgency": "high",
+          "response": "I will escalate this issue to our billing team immediately.",
+          "backend": "base",
+          "valid_json": true,
+          "raw": "{\n  \"category\": \"billing\",\n  \"urgency\": \"high\",\n  \"response\": \"I will escalate this issue to our billing team immediately.\"\n}"
+        },
+        {
+          "id": "test-shipping-2",
+          "category": "billing",
+          "urgency": "high",
+          "response": "للتواصل مع الشركة، يجب أن تكون لديك معلومات دقيقة حول السبب الرئيسي للطرد. قد يكون هناك مشكلة في التسليم أو الإجابة على طلبك أو وجود أي أخطاء في عملية التسليم. يرجى تقديم المعلومات الكاملة لمساعدتك في حل المشكلة.",
+          "backend": "base",
+          "valid_json": true,
+          "raw": "{\n  \"category\": \"billing\",\n  \"urgency\": \"high\",\n  \"response\": \"للتواصل مع الشركة، يجب أن تكون لديك معلومات دقيقة حول السبب الرئيسي للطرد. قد يكون هناك مشكلة في التسليم أو الإجابة على طلبك أو وجود أي أخطاء في عملية التسليم. يرجى تقديم المعلومات الكاملة لمساعدتك في حل المشكلة.\"\n}"
+        },
+        {
+          "id": "test-shipping-3",
+          "category": "shipping",
+          "urgency": "high",
+          "response": "Dear [Recipient's Name], I am writing to inform you that our shipment has been lost and we are requesting your immediate attention. Please ensure that all relevant documents are promptly retrieved and verified before proceeding further.",
+          "backend": "base",
+          "valid_json": true,
+          "raw": "{\n  \"category\": \"shipping\",\n  \"urgency\": \"high\",\n  \"response\": \"Dear [Recipient's Name], I am writing to inform you that our shipment has been lost and we are requesting your immediate attention. Please ensure that all relevant documents are promptly retrieved and verified before proceeding further.\"\n}"
+        },
+        {
+          "id": "test-shipping-4",
+          "category": "shipping",
+          "urgency": "high",
+          "response": "للتواصل مع الشركة، يجب عليك تقديم معلومات عن الشحن الخاص بك مثل رقم التسليم. هذا يمكن أن يساعد في تحسين عملية التواصل والمساعدة في حل المشاكل.",
+          "backend": "base",
+          "valid_json": true,
+          "raw": "{\n  \"category\": \"shipping\",\n  \"urgency\": \"high\",\n  \"response\": \"للتواصل مع الشركة، يجب عليك تقديم معلومات عن الشحن الخاص بك مثل رقم التسليم. هذا يمكن أن يساعد في تحسين عملية التواصل والمساعدة في حل المشاكل.\"\n}"
+        },
+        {
+          "id": "test-shipping-5",
+          "category": "shipping",
+          "urgency": "high",
+          "response": "Dear customer, we are sorry to inform you that your package has been delivered by courier but it has not arrived at our warehouse yet. We will contact the courier to resolve this issue as soon as possible. Please keep us updated on the status of your package.",
+          "backend": "base",
+          "valid_json": true,
+          "raw": "{\n  \"category\": \"shipping\",\n  \"urgency\": \"high\",\n  \"response\": \"Dear customer, we are sorry to inform you that your package has been delivered by courier but it has not arrived at our warehouse yet. We will contact the courier to resolve this issue as soon as possible. Please keep us updated on the status of your package.\"\n}"
+        }
+      ]
+    },
+    "lora": {
+      "samples": 24,
+      "valid_output_rate": 0.9583333333333334,
+      "category_macro_f1": 0.45543478260869563,
+      "category_accuracy": 0.5,
+      "urgency_macro_f1": 0.3142857142857143,
+      "urgency_accuracy": 0.4583333333333333,
+      "coverage": 0.9583333333333334,
+      "accepted_category_accuracy": 0.5217391304347826,
+      "elapsed_seconds": 168.93,
+      "predictions": [
+        {
+          "id": "test-account-0",
+          "category": "billing",
+          "urgency": "high",
+          "response": "Please verify your account information to proceed.",
+          "backend": "lora",
+          "valid_json": true,
+          "raw": "{\"category\": \"billing\", \"urgency\": \"high\", \"response\": \"Please verify your account information to proceed.\"}"
+        },
+        {
+          "id": "test-account-1",
+          "category": "billing",
+          "urgency": "high",
+          "response": "Please verify this email address before proceeding.",
+          "backend": "lora",
+          "valid_json": true,
+          "raw": "{\"category\": \"billing\", \"urgency\": \"high\", \"response\": \"Please verify this email address before proceeding.\"}"
+        },
+        {
+          "id": "test-account-2",
+          "category": "billing",
+          "urgency": "high",
+          "response": "Please provide your account number so we can verify your identity.",
+          "backend": "lora",
+          "valid_json": true,
+          "raw": "{\"category\": \"billing\", \"urgency\": \"high\", \"response\": \"Please provide your account number so we can verify your identity.\"}"
+        },
+        {
+          "id": "test-account-3",
+          "category": "billing",
+          "urgency": "high",
+          "response": "الرجاء تقديم معلومات أكثر دقة حول المشكلة وسأقوم بتقديم المساعدة المناسبة.",
+          "backend": "lora",
+          "valid_json": true,
+          "raw": "{\"category\": \"billing\", \"urgency\": \"high\", \"response\": \"الرجاء تقديم معلومات أكثر دقة حول المشكلة وسأقوم بتقديم المساعدة المناسبة.\"}"
+        },
+        {
+          "id": "test-account-4",
+          "category": "billing",
+          "urgency": "high",
+          "response": "أنا سعيد بمساعدتك في تحديث كلمة المرور لحسابك. يجب عليك الاتصال بالعميل مباشرة لإجراء العملية.",
+          "backend": "lora",
+          "valid_json": true,
+          "raw": "{\"category\": \"billing\", \"urgency\": \"high\", \"response\": \"أنا سعيد بمساعدتك في تحديث كلمة المرور لحسابك. يجب عليك الاتصال بالعميل مباشرة لإجراء العملية.\"}"
+        },
+        {
+          "id": "test-account-5",
+          "category": "billing",
+          "urgency": "high",
+          "response": "Please provide your email address so we can verify your account.",
+          "backend": "lora",
+          "valid_json": true,
+          "raw": "{\"category\": \"billing\", \"urgency\": \"high\", \"response\": \"Please provide your email address so we can verify your account.\"}"
+        },
+        {
+          "id": "test-billing-0",
+          "category": "billing",
+          "urgency": "high",
+          "response": "Please provide your company tax number so we can update the invoice.",
+          "backend": "lora",
+          "valid_json": true,
+          "raw": "{\"category\": \"billing\", \"urgency\": \"high\", \"response\": \"Please provide your company tax number so we can update the invoice.\"}"
+        },
+        {
+          "id": "test-billing-1",
+          "category": "billing",
+          "urgency": "high",
+          "response": "Please provide your order number so we can verify it.",
+          "backend": "lora",
+          "valid_json": true,
+          "raw": "{\"category\": \"billing\", \"urgency\": \"high\", \"response\": \"Please provide your order number so we can verify it.\"}"
+        },
+        {
+          "id": "test-billing-2",
+          "category": "billing",
+          "urgency": "high",
+          "response": "الرقم الضريبي يجب أن يُضَع في الملف الرئيسي للفواتير.",
+          "backend": "lora",
+          "valid_json": true,
+          "raw": "{\"category\": \"billing\", \"urgency\": \"high\", \"response\": \"الرقم الضريبي يجب أن يُضَع في الملف الرئيسي للفواتير.\"}"
+        },
+        {
+          "id": "test-billing-3",
+          "category": "billing",
+          "urgency": "high",
+          "response": "Please provide your order number so we can verify it.",
+          "backend": "lora",
+          "valid_json": true,
+          "raw": "{\"category\": \"billing\", \"urgency\": \"high\", \"response\": \"Please provide your order number so we can verify it.\"}"
+        },
+        {
+          "id": "test-billing-4",
+          "category": "billing",
+          "urgency": "high",
+          "response": "السهم الخاص بك قد يكون غير موثوق به. يرجى تقديم التفاصيل المطلوبة للحصول على المساعدة.",
+          "backend": "lora",
+          "valid_json": true,
+          "raw": "{\"category\": \"billing\", \"urgency\": \"high\", \"response\": \"السهم الخاص بك قد يكون غير موثوق به. يرجى تقديم التفاصيل المطلوبة للحصول على المساعدة.\"}"
+        },
+        {
+          "id": "test-billing-5",
+          "category": "billing",
+          "urgency": "high",
+          "response": "Dear customer, we are sorry to inform you that there has been an error in your payment process. We will be contacting you as soon as possible to resolve this issue.",
+          "backend": "lora",
+          "valid_json": true,
+          "raw": "{\"category\": \"billing\", \"urgency\": \"high\", \"response\": \"Dear customer, we are sorry to inform you that there has been an error in your payment process. We will be contacting you as soon as possible to resolve this issue.\"}"
+        },
+        {
+          "id": "test-refund-0",
+          "category": "refund",
+          "urgency": "high",
+          "response": "Please provide your order number so we can verify the issue.",
+          "backend": "lora",
+          "valid_json": true,
+          "raw": "{\"category\": \"refund\", \"urgency\": \"high\", \"response\": \"Please provide your order number so we can verify the issue.\"}"
+        },
+        {
+          "id": "test-refund-1",
+          "category": "billing",
+          "urgency": "high",
+          "response": "I will review your account details immediately.",
+          "backend": "lora",
+          "valid_json": true,
+          "raw": "{\"category\": \"billing\", \"urgency\": \"high\", \"response\": \"I will review your account details immediately.\"}"
+        },
+        {
+          "id": "test-refund-2",
+          "category": "billing",
+          "urgency": "high",
+          "response": "الرجاء تقديم معلومات عن النقطة التي تم تجربتها ونود أن نساعدك في حل المشكلة.",
+          "backend": "lora",
+          "valid_json": true,
+          "raw": "{\"category\": \"billing\", \"urgency\": \"high\", \"response\": \"الرجاء تقديم معلومات عن النقطة التي تم تجربتها ونود أن نساعدك في حل المشكلة.\"}"
+        },
+        {
+          "id": "test-refund-3",
+          "category": "refund",
+          "urgency": "high",
+          "response": "Please provide your order number so we can verify it.",
+          "backend": "lora",
+          "valid_json": true,
+          "raw": "{\"category\": \"refund\", \"urgency\": \"high\", \"response\": \"Please provide your order number so we can verify it.\"}"
+        },
+        {
+          "id": "test-refund-4",
+          "category": "refund",
+          "urgency": "high",
+          "response": "المنتج الذي ترغب في إعادة الشراء هو: [اسم المنتج]",
+          "backend": "lora",
+          "valid_json": true,
+          "raw": "{\"category\": \"refund\", \"urgency\": \"high\", \"response\": \"المنتج الذي ترغب في إعادة الشراء هو: [اسم المنتج]\"}"
+        },
+        {
+          "id": "test-refund-5",
+          "category": "refund",
+          "urgency": "high",
+          "response": "الرجاء تقديم معلومات إضافية حول السبب الرئيسي لطلب الاحتفاظ بالمنتج أو المنتجات المطلوبة.",
+          "backend": "lora",
+          "valid_json": true,
+          "raw": "{\"category\": \"refund\", \"urgency\": \"high\", \"response\": \"الرجاء تقديم معلومات إضافية حول السبب الرئيسي لطلب الاحتفاظ بالمنتج أو المنتجات المطلوبة.\"}"
+        },
+        {
+          "id": "test-shipping-0",
+          "category": "billing",
+          "urgency": "high",
+          "response": "Please check the tracking number on the back of the package.",
+          "backend": "lora",
+          "valid_json": true,
+          "raw": "{\"category\": \"billing\", \"urgency\": \"high\", \"response\": \"Please check the tracking number on the back of the package.\"}"
+        },
+        {
+          "id": "test-shipping-1",
+          "category": "billing",
+          "urgency": "high",
+          "response": "Please provide a tracking number or contact customer service to escalate this issue.",
+          "backend": "lora",
+          "valid_json": true,
+          "raw": "{\"category\": \"billing\", \"urgency\": \"high\", \"response\": \"Please provide a tracking number or contact customer service to escalate this issue.\"}"
+        },
+        {
+          "id": "test-shipping-2",
+          "category": "billing",
+          "urgency": "high",
+          "response": "للتوصية: اتصل بنا للاستفسار عن سبب عدم التحدث عن الطرد في الصفحة الرئيسية للتخزين.",
+          "backend": "lora",
+          "valid_json": true,
+          "raw": "{\"category\": \"billing\", \"urgency\": \"high\", \"response\": \"للتوصية: اتصل بنا للاستفسار عن سبب عدم التحدث عن الطرد في الصفحة الرئيسية للتخزين.\"}"
+        },
+        {
+          "id": "test-shipping-3",
+          "backend": "lora",
+          "valid_json": false,
+          "raw": "{\"category\": \"billing\", \"urgency\": \"high\", \"response\": \"الناقل يرجى التوقيع على هذا الرسالة واتخاذ الإجراءات اللازمة لتحسين الأداء.\"]",
+          "escalated": true,
+          "response": "Model output was invalid; human review required."
+        },
+        {
+          "id": "test-shipping-4",
+          "category": "shipping",
+          "urgency": "high",
+          "response": "السماح بتسجيل الدخول إلى الموقع للاستفسار عن الشحن.",
+          "backend": "lora",
+          "valid_json": true,
+          "raw": "{\"category\": \"shipping\", \"urgency\": \"high\", \"response\": \"السماح بتسجيل الدخول إلى الموقع للاستفسار عن الشحن.\"}"
+        },
+        {
+          "id": "test-shipping-5",
+          "category": "shipping",
+          "urgency": "high",
+          "response": "Please provide your order number so we can verify it.",
+          "backend": "lora",
+          "valid_json": true,
+          "raw": "{\"category\": \"shipping\", \"urgency\": \"high\", \"response\": \"Please provide your order number so we can verify it.\"}"
+        }
+      ]
+    }
+  }
+}

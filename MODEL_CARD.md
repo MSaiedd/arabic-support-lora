@@ -43,3 +43,13 @@ communication. No action execution is connected. Always retain human review for 
 
 Follow the README commands. Pin the base model commit with `--revision` and retain the
 training report. The optional GPU QLoRA path requires a CUDA setup and separate validation.
+
+## Recorded smoke adapter
+
+The [CPU smoke release](https://github.com/MSaiedd/arabic-support-lora/releases/tag/v0.1.0)
+contains an actual adapter trained for eight CPU optimizer steps with 540,672 trainable parameters.
+On the 24 synthetic test tickets, category macro-F1 changed from 0.3889 (base) to 0.4554
+(adapter), and valid JSON changed from 0.75 to 0.9583. The TF-IDF baseline scored 0.7542
+category macro-F1. These are fixture results, not production quality estimates.
+The trained adapter's weights are distributed under Apache-2.0 alongside the base model license.
+Code and original fixture data remain MIT licensed.

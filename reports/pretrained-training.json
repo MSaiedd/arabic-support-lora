@@ -1,0 +1,44 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "resolved_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "seed": 42,
+  "method": "LoRA",
+  "device": "cpu",
+  "optimizer_steps": 8,
+  "gradient_accumulation": 1,
+  "learning_rate": 0.0002,
+  "max_length": 512,
+  "trainable_parameters": 540672,
+  "dataset_counts": {
+    "train": 32,
+    "validation": 16,
+    "test": 24
+  },
+  "dataset_hashes": {
+    "train": "afd5957aad067b86b55e8e99dce112ec0e43f06a32f7a24671b396f259bbe67d",
+    "validation": "8f47f308a3dbf0412647daf012c63bc37cce696a7637fd7c9ca64aa0891db6d6",
+    "test": "797f4c440f845c132816b9084fdf015c3da69eae10cede5eff438eee7d369a88"
+  },
+  "training_losses": [
+    0.8368273377418518,
+    1.6493605375289917,
+    1.8743436336517334,
+    1.4716379642486572,
+    0.9707275032997131,
+    1.5294313430786133,
+    1.449095606803894,
+    1.5510072708129883
+  ],
+  "validation_base_token_nll": 1.5124923368043537,
+  "validation_adapter_token_nll": 1.2526601400179198,
+  "elapsed_seconds": 88.04,
+  "versions": {
+    "torch": "2.14.1+cpu",
+    "transformers": "4.57.6",
+    "peft": "0.18.1",
+    "accelerate": "1.15.0"
+  },
+  "limitation": "Small synthetic fixture. Validation NLL does not establish held-out task quality or production suitability.",
+  "validation_scope": "Pretrained Qwen2.5-0.5B-Instruct CPU LoRA smoke: 8 optimizer steps, one example per step. This is not full convergence or evidence of real-world support accuracy.",
+  "examples_processed": 8
+}

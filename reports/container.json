@@ -1,0 +1,7 @@
+{
+  "project": "arabic-support-lora",
+  "result": "passed",
+  "image_id": "sha256:23a004cf2de3167edc0ad0b16307656742156a0074c5ed575b1f981ad15e8f66",
+  "non_root": true,
+  "checks": "isolated container startup and API flow; named-volume persistence; refund approval for SupportPilot; baseline training/inference for LoRA project"
+}

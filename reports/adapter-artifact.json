@@ -1,0 +1,9 @@
+{
+  "file": "arabic-support-lora-cpu-smoke.zip",
+  "bytes": 5953447,
+  "sha256": "2db7a75bcd90163bb478ec749335e4ff186b300498a0faa0507feb0d413a3e04",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "base_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "release_url": "https://github.com/MSaiedd/arabic-support-lora/releases/tag/v0.1.0",
+  "scope": "Pretrained Qwen2.5-0.5B-Instruct CPU LoRA smoke: 8 optimizer steps, one example per step. This is not full convergence or evidence of real-world support accuracy."
+}
