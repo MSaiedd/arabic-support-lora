@@ -1,0 +1,102 @@
+{
+  "dataset": "original synthetic fixture; not a real-world benchmark",
+  "dataset_hashes": {
+    "train": "afd5957aad067b86b55e8e99dce112ec0e43f06a32f7a24671b396f259bbe67d",
+    "validation": "8f47f308a3dbf0412647daf012c63bc37cce696a7637fd7c9ca64aa0891db6d6",
+    "test": "797f4c440f845c132816b9084fdf015c3da69eae10cede5eff438eee7d369a88"
+  },
+  "response_quality": "Not automatically scored. Use docs/RESPONSE_REVIEW.md for human review.",
+  "variants": {
+    "base": {
+      "samples": 4,
+      "valid_output_rate": 0.0,
+      "category_macro_f1": 0.0,
+      "category_accuracy": 0.0,
+      "urgency_macro_f1": 0.0,
+      "urgency_accuracy": 0.0,
+      "coverage": 0.0,
+      "accepted_category_accuracy": null,
+      "elapsed_seconds": 2.89,
+      "predictions": [
+        {
+          "id": "test-account-0",
+          "backend": "base",
+          "valid_json": false,
+          "raw": "_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build",
+          "escalated": true,
+          "response": "Model output was invalid; human review required."
+        },
+        {
+          "id": "test-billing-0",
+          "backend": "base",
+          "valid_json": false,
+          "raw": " facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial",
+          "escalated": true,
+          "response": "Model output was invalid; human review required."
+        },
+        {
+          "id": "test-refund-0",
+          "backend": "base",
+          "valid_json": false,
+          "raw": " facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial",
+          "escalated": true,
+          "response": "Model output was invalid; human review required."
+        },
+        {
+          "id": "test-shipping-0",
+          "backend": "base",
+          "valid_json": false,
+          "raw": "_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build",
+          "escalated": true,
+          "response": "Model output was invalid; human review required."
+        }
+      ]
+    },
+    "lora": {
+      "samples": 4,
+      "valid_output_rate": 0.0,
+      "category_macro_f1": 0.0,
+      "category_accuracy": 0.0,
+      "urgency_macro_f1": 0.0,
+      "urgency_accuracy": 0.0,
+      "coverage": 0.0,
+      "accepted_category_accuracy": null,
+      "elapsed_seconds": 3.39,
+      "predictions": [
+        {
+          "id": "test-account-0",
+          "backend": "lora",
+          "valid_json": false,
+          "raw": "_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build",
+          "escalated": true,
+          "response": "Model output was invalid; human review required."
+        },
+        {
+          "id": "test-billing-0",
+          "backend": "lora",
+          "valid_json": false,
+          "raw": " bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed bombed",
+          "escalated": true,
+          "response": "Model output was invalid; human review required."
+        },
+        {
+          "id": "test-refund-0",
+          "backend": "lora",
+          "valid_json": false,
+          "raw": " facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial facial",
+          "escalated": true,
+          "response": "Model output was invalid; human review required."
+        },
+        {
+          "id": "test-shipping-0",
+          "backend": "lora",
+          "valid_json": false,
+          "raw": "_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build_build",
+          "escalated": true,
+          "response": "Model output was invalid; human review required."
+        }
+      ]
+    }
+  },
+  "model_scope": "Randomly initialized tiny local Qwen fixture, not pretrained Qwen2.5. Tests generation/schema/evaluation wiring only."
+}

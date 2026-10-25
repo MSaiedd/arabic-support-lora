@@ -1,0 +1,240 @@
+{
+  "dataset": "original synthetic fixture; not a real-world benchmark",
+  "dataset_hashes": {
+    "train": "afd5957aad067b86b55e8e99dce112ec0e43f06a32f7a24671b396f259bbe67d",
+    "validation": "8f47f308a3dbf0412647daf012c63bc37cce696a7637fd7c9ca64aa0891db6d6",
+    "test": "797f4c440f845c132816b9084fdf015c3da69eae10cede5eff438eee7d369a88"
+  },
+  "response_quality": "Not automatically scored. Use docs/RESPONSE_REVIEW.md for human review.",
+  "variants": {
+    "tfidf": {
+      "samples": 24,
+      "valid_output_rate": 1.0,
+      "category_macro_f1": 0.7541666666666667,
+      "category_accuracy": 0.75,
+      "urgency_macro_f1": 0.7482517482517483,
+      "urgency_accuracy": 0.75,
+      "coverage": 0.625,
+      "accepted_category_accuracy": 1.0,
+      "elapsed_seconds": 0.07,
+      "predictions": [
+        {
+          "id": "test-account-0",
+          "category": "shipping",
+          "urgency": "normal",
+          "response": "Your request needs human review.",
+          "confidence": 0.2980274950865799,
+          "escalated": true,
+          "backend": "tfidf-baseline"
+        },
+        {
+          "id": "test-account-1",
+          "category": "account",
+          "urgency": "normal",
+          "response": "Please use the official account recovery process. Do not share your password or verification codes.",
+          "confidence": 0.3035630709264655,
+          "escalated": false,
+          "backend": "tfidf-baseline"
+        },
+        {
+          "id": "test-account-2",
+          "category": "shipping",
+          "urgency": "high",
+          "response": "سيتم تحويل طلبك للمراجعة البشرية.",
+          "confidence": 0.2771986914548288,
+          "escalated": true,
+          "backend": "tfidf-baseline"
+        },
+        {
+          "id": "test-account-3",
+          "category": "account",
+          "urgency": "normal",
+          "response": "يرجى استخدام إجراءات استعادة الحساب الرسمية. لا تشارك كلمة المرور أو رموز التحقق.",
+          "confidence": 0.36904115807348314,
+          "escalated": false,
+          "backend": "tfidf-baseline"
+        },
+        {
+          "id": "test-account-4",
+          "category": "account",
+          "urgency": "normal",
+          "response": "يرجى استخدام إجراءات استعادة الحساب الرسمية. لا تشارك كلمة المرور أو رموز التحقق.",
+          "confidence": 0.3383247372156297,
+          "escalated": false,
+          "backend": "tfidf-baseline"
+        },
+        {
+          "id": "test-account-5",
+          "category": "account",
+          "urgency": "normal",
+          "response": "يرجى استخدام إجراءات استعادة الحساب الرسمية. لا تشارك كلمة المرور أو رموز التحقق.",
+          "confidence": 0.35970308289113334,
+          "escalated": false,
+          "backend": "tfidf-baseline"
+        },
+        {
+          "id": "test-billing-0",
+          "category": "shipping",
+          "urgency": "normal",
+          "response": "Your request needs human review.",
+          "confidence": 0.278003506737002,
+          "escalated": true,
+          "backend": "tfidf-baseline"
+        },
+        {
+          "id": "test-billing-1",
+          "category": "billing",
+          "urgency": "high",
+          "response": "Please provide your order reference so support can review the payment. Do not share full card details.",
+          "confidence": 0.33953884079079444,
+          "escalated": false,
+          "backend": "tfidf-baseline"
+        },
+        {
+          "id": "test-billing-2",
+          "category": "shipping",
+          "urgency": "normal",
+          "response": "سيتم تحويل طلبك للمراجعة البشرية.",
+          "confidence": 0.2755662905873846,
+          "escalated": true,
+          "backend": "tfidf-baseline"
+        },
+        {
+          "id": "test-billing-3",
+          "category": "billing",
+          "urgency": "high",
+          "response": "يرجى تقديم رقم الطلب لمراجعة عملية الدفع. لا تشارك بيانات البطاقة الكاملة.",
+          "confidence": 0.3505950042785674,
+          "escalated": false,
+          "backend": "tfidf-baseline"
+        },
+        {
+          "id": "test-billing-4",
+          "category": "billing",
+          "urgency": "normal",
+          "response": "يرجى تقديم رقم الطلب لمراجعة عملية الدفع. لا تشارك بيانات البطاقة الكاملة.",
+          "confidence": 0.32512257328326855,
+          "escalated": false,
+          "backend": "tfidf-baseline"
+        },
+        {
+          "id": "test-billing-5",
+          "category": "billing",
+          "urgency": "high",
+          "response": "يرجى تقديم رقم الطلب لمراجعة عملية الدفع. لا تشارك بيانات البطاقة الكاملة.",
+          "confidence": 0.349565434313173,
+          "escalated": false,
+          "backend": "tfidf-baseline"
+        },
+        {
+          "id": "test-refund-0",
+          "category": "account",
+          "urgency": "normal",
+          "response": "Your request needs human review.",
+          "confidence": 0.29428283655346643,
+          "escalated": true,
+          "backend": "tfidf-baseline"
+        },
+        {
+          "id": "test-refund-1",
+          "category": "refund",
+          "urgency": "high",
+          "response": "Your request needs human review.",
+          "confidence": 0.27087593629260354,
+          "escalated": true,
+          "backend": "tfidf-baseline"
+        },
+        {
+          "id": "test-refund-2",
+          "category": "account",
+          "urgency": "normal",
+          "response": "سيتم تحويل طلبك للمراجعة البشرية.",
+          "confidence": 0.2729818776485758,
+          "escalated": true,
+          "backend": "tfidf-baseline"
+        },
+        {
+          "id": "test-refund-3",
+          "category": "refund",
+          "urgency": "high",
+          "response": "يرجى تقديم رقم الطلب. طلبات الاسترجاع خلال 30 يوماً تخضع للمراجعة والموافقة.",
+          "confidence": 0.31503631132099763,
+          "escalated": false,
+          "backend": "tfidf-baseline"
+        },
+        {
+          "id": "test-refund-4",
+          "category": "refund",
+          "urgency": "normal",
+          "response": "يرجى تقديم رقم الطلب. طلبات الاسترجاع خلال 30 يوماً تخضع للمراجعة والموافقة.",
+          "confidence": 0.41220077460854654,
+          "escalated": false,
+          "backend": "tfidf-baseline"
+        },
+        {
+          "id": "test-refund-5",
+          "category": "refund",
+          "urgency": "high",
+          "response": "يرجى تقديم رقم الطلب. طلبات الاسترجاع خلال 30 يوماً تخضع للمراجعة والموافقة.",
+          "confidence": 0.33920012020612933,
+          "escalated": false,
+          "backend": "tfidf-baseline"
+        },
+        {
+          "id": "test-shipping-0",
+          "category": "shipping",
+          "urgency": "normal",
+          "response": "Please provide your order reference so we can verify the delivery status.",
+          "confidence": 0.3055792354592293,
+          "escalated": false,
+          "backend": "tfidf-baseline"
+        },
+        {
+          "id": "test-shipping-1",
+          "category": "shipping",
+          "urgency": "high",
+          "response": "Please provide your order reference so we can verify the delivery status.",
+          "confidence": 0.31268627346018724,
+          "escalated": false,
+          "backend": "tfidf-baseline"
+        },
+        {
+          "id": "test-shipping-2",
+          "category": "shipping",
+          "urgency": "high",
+          "response": "سيتم تحويل طلبك للمراجعة البشرية.",
+          "confidence": 0.2754472272892723,
+          "escalated": true,
+          "backend": "tfidf-baseline"
+        },
+        {
+          "id": "test-shipping-3",
+          "category": "shipping",
+          "urgency": "normal",
+          "response": "سيتم تحويل طلبك للمراجعة البشرية.",
+          "confidence": 0.2781165691657209,
+          "escalated": true,
+          "backend": "tfidf-baseline"
+        },
+        {
+          "id": "test-shipping-4",
+          "category": "shipping",
+          "urgency": "normal",
+          "response": "يرجى تقديم رقم الطلب للتحقق من حالة التوصيل.",
+          "confidence": 0.38762780333308744,
+          "escalated": false,
+          "backend": "tfidf-baseline"
+        },
+        {
+          "id": "test-shipping-5",
+          "category": "shipping",
+          "urgency": "high",
+          "response": "يرجى تقديم رقم الطلب للتحقق من حالة التوصيل.",
+          "confidence": 0.3133650889817416,
+          "escalated": false,
+          "backend": "tfidf-baseline"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "model": "artifacts/tiny-base",
+  "resolved_revision": null,
+  "seed": 42,
+  "method": "LoRA",
+  "device": "cpu",
+  "optimizer_steps": 8,
+  "gradient_accumulation": 1,
+  "learning_rate": 0.0002,
+  "max_length": 512,
+  "trainable_parameters": 512,
+  "dataset_counts": {
+    "train": 32,
+    "validation": 16,
+    "test": 24
+  },
+  "dataset_hashes": {
+    "train": "afd5957aad067b86b55e8e99dce112ec0e43f06a32f7a24671b396f259bbe67d",
+    "validation": "8f47f308a3dbf0412647daf012c63bc37cce696a7637fd7c9ca64aa0891db6d6",
+    "test": "797f4c440f845c132816b9084fdf015c3da69eae10cede5eff438eee7d369a88"
+  },
+  "training_losses": [
+    11.9168701171875,
+    11.916831970214844,
+    11.935523986816406,
+    11.92882251739502,
+    11.926396369934082,
+    11.935269355773926,
+    11.930442810058594,
+    11.90999984741211
+  ],
+  "validation_base_token_nll": 11.927667146996606,
+  "validation_adapter_token_nll": 11.927412534061867,
+  "elapsed_seconds": 5.74,
+  "versions": {
+    "torch": "2.14.1+cpu",
+    "transformers": "4.57.6",
+    "peft": "0.18.1",
+    "accelerate": "1.15.0"
+  },
+  "limitation": "Small synthetic fixture. Validation NLL does not establish held-out task quality or production suitability.",
+  "validation_scope": "Full trainer CLI on a randomly initialized tiny local Qwen architecture. Engineering smoke only; not pretrained-model adaptation or useful support quality."
+}
